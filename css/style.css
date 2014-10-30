@@ -1,0 +1,232 @@
+/* vdab_layout startbestand */
+
+/****algemeen****/
+
+
+body{}
+section:nth-child(odd), section {background-image :url('../images/achtergrond.jpg');
+                                 border-top :#d6e9c6;
+                                 border-bottom :#d6e9c6;}
+header, footer {background-color :green;
+                border-top :#d6e9c6;
+                border-bottom :#d6e9c6;
+                padding:10px}
+footer {margin-bottom :30px;
+        overflow:hidden;}
+
+.navbar-brand {padding-top:10px;
+               padding-bottom:10px } /* vdab_60 logo is te hoog */
+
+.navbar {margin-bottom:0;
+         border-radius:0;}
+.navbar-collapse{padding-left:0;
+                 padding-right:0;}
+
+h2 .glyphicon {font-size: 0.8em;
+               margin-right: 0.4em;}
+
+#hm li.active{background-color:red;
+              color:blue;}
+
+/*** overwrite bootstrap ***/
+
+.container .jumbotron{border-radius:0px;
+                      margin-bottom:0px;
+                      padding:50px;}
+
+/*** contactpagina ***/
+
+#content{background-color: #FFFFFF;
+         color: #015965;
+         width:100%;
+         margin:0;
+         padding:1em;
+         min-height: 700px;}
+
+#Map{width: 49.5%;
+     height:31.25em;
+     margin-bottom: 2em;
+     border: 0.1em solid black;
+     padding:0;
+     float: left;}
+
+#right_content{float: right;
+               background-color: #FFFFFF;
+               border:1px solid black;
+               padding:10px;
+               height:31.25em;
+               background:#FFB673; /* kleur form */
+               width: 49.5%;}
+
+
+
+#right_content textarea.form-control{width: 90%;
+                                     margin:auto 5%;}
+#right_content input.form-control{width: 90%; 
+                                  margin:auto 5%;}
+#right_content label{width: 90%; 
+                     margin:auto 5%;
+                     text-align:left;}
+#right_content button{margin:auto 3%;
+}
+
+@media (max-width: 768px) 
+{
+    #right_content {float: left;
+                    width: 100%;
+                    height: auto;}
+
+    #Map{float: left;
+         width: 100%;
+         height: 18.75em;}
+}
+
+
+@media (min-width:767px){
+}
+
+@media (max-width:500px)
+{
+    .contact{
+        padding:1em;
+        margin: 0;
+        width: 100%;
+    }
+    #Map{width: 100%;
+         height:31.25em;
+         margin:0;
+         margin-bottom: 2em;
+         border: 0.1em solid black;
+         padding:0;
+         float: left;}
+
+    #right_content{float: left;
+                   margin:0;
+                   background-color: #FFFFFF;
+                   border:1px solid black;
+                   padding:10px;
+                   height:31.25em;
+                   background:#FFB673;
+                   width: 100%;}
+}
+
+/*** css winkelkarretje ***/
+
+#products-wrapper {
+    width: 90%;
+    min-width:300px;
+    margin-right: auto;
+    margin-left: auto;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.products {
+    width: 60%;
+    float:left;
+    margin-right: 10px;
+}
+.product {
+    margin-bottom: 10px;
+    height: 100px;
+    background: #F0F0F0;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #F8F8F8;
+
+}
+.product .product-thumb {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.product .product-content{
+    overflow:hidden;
+}
+.product .product-content h3 {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    color: #707070;
+}
+.product .product-info {
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+.shopping-cart{
+    width: 30%;
+    float:left;
+    background: #F0F0F0;
+    padding: 10px;	
+    border: 1px solid #DDD;
+    border-radius: 5px;
+
+}
+.shopping-cart h2 {
+    background: #E2E2E2;
+    padding: 4px;
+    font-size: 14px;
+    margin: -10px -10px 5px;
+    color: #707070;
+}
+
+.shopping-cart h3,.view-cart h3 {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+.shopping-cart ol{
+    padding: 1px 0px 0px 15px;
+}
+.shopping-cart .cart-itm, .view-cart .cart-itm{
+    border-bottom: 1px solid #DDD;
+    font-size: 11px;
+    font-family: arial;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.shopping-cart .remove-itm, .view-cart .remove-itm{
+    font-size: 14px;
+    float: right;
+    background: #D5D5D5;
+    padding: 4px;
+    line-height: 8px;
+    border-radius: 3px;
+}
+.shopping-cart .remove-itm:hover, .view-cart .remove-itm:hover{
+    background: #C4C4C4;
+}
+.shopping-cart .remove-itm a, .view-cart .remove-itm a{
+    color: #888;
+    text-shadow: 1px 1px 1px #ECECEC;
+    text-decoration:none;
+}
+
+.check-out-txt{
+    float:right;
+}
+
+/*** view cart **/
+.view-cart{
+    width: 100%;
+    float:left;
+    background: #F0F0F0;
+    padding: 10px;	
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+.view-cart .p-price{
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.view-cart .product-info{width:60%;}
+
+
+
+
+
